@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effect of Bio-Inspired Surface Micro-Patterns on Nucleate Boiling Performance</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #111111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #00FF00;
+        }
+        h1, h2 {
+            color: #00FF00;
+            text-shadow: 0 0 10px #00FF00;
+        }
+        nav {
+            background-color: #222222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #00FFFF;
+            margin: 0 15px;
+            text-decoration: none;
+            text-shadow: 0 0 5px #00FFFF;
+        }
+        nav a:hover {
+            text-shadow: 0 0 15px #00FFFF;
+        }
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            border-left: 5px solid #00FF00;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            color: #FFFFFF;
+        }
+        table th, table td {
+            border: 1px solid #00FF00;
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            background-color: #111111;
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid #00FF00;
+        }
+        .neon-text {
+            text-shadow: 0 0 10px #00FF00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Effect of Bio-Inspired Surface Micro-Patterns on Nucleate Boiling Performance</h1>
+        <p class="neon-text">Students: Muhammad Ibrahim (220501037), Rifaah Ansari (220501063)<br>Supervisor: Dr. Atif Muzaffar | Co-Supervisor: Dr. Junaid Qayyaum</p>
+    </header>
+    <nav>
+        <a href="#intro">Introduction</a>
+        <a href="#lit">Literature Review</a>
+        <a href="#gaps">Research Gaps</a>
+        <a href="#obj">Objectives</a>
+        <a href="#meth">Methodology</a>
+        <a href="#plan">Work Plan</a>
+        <a href="#sig">Significance</a>
+        <a href="#sdg">SDGs</a>
+        <a href="#fund">Funding</a>
+        <a href="#ref">References</a>
+    </nav>
+    
+    <section id="intro">
+        <h2>Introduction</h2>
+        <ul>
+            <li>Nucleate boiling is an efficient mode of heat transfer where vapor bubbles form and detach from a heated surface. Its performance depends heavily on surface characteristics such as roughness, wettability, and geometry.</li>
+            <li>Inspired by natural surfaces (lotus leaf, shark skin, leaf veins), this study examines how bio-inspired micro-patterns enhance boiling heat transfer, focusing on bubble dynamics, heat transfer coefficient (HTC), and critical heat flux (CHF).</li>
+        </ul>
+        <!-- Placeholder for image: <img src="boiling_diagram.jpg" alt="Boiling Diagram" style="width:100%;"> -->
+    </section>
+    
+    <section id="lit">
+        <h2>Literature Review</h2>
+        <table>
+            <tr><th>Year</th><th>Authors</th><th>Title</th><th>Summary</th></tr>
+            <tr><td>2021</td><td>Mahyar Ghazivini et al.</td><td>A review on correlations of bubble growth mechanisms...</td><td>A comprehensive review of mathematical correlations for bubble growth mechanisms and bubble dynamics parameters. It consolidates models to improve the predictive accuracy of boiling heat transfer.</td></tr>
+            <tr><td>2024</td><td>Jaunet et al.</td><td>Study of nucleate boiling growth regime on thin surfaces</td><td>Explored how thin heating surfaces alter bubble growth regime and microlayer dynamics, thus affecting HTC and CHF.</td></tr>
+            <tr><td>2022</td><td>Thangavelu et al.</td><td>Influence of surface roughness and wettability...</td><td>Showed nanocoated copper surfaces boosting HTC and CHF via improved wetting and capillary action.</td></tr>
+            <tr><td>2021</td><td>Uzair Sajjad et al.</td><td>A high-fidelity approach to correlate the nucleate pool boiling data...</td><td>Developed a deep learning model combining surface roughness, material, inclination, etc., to predict HTC with R² ≈ 0.994.</td></tr>
+            <tr><td>2025</td><td>Vijay Kuberan, Sateesh Gedupudi</td><td>Empirical modeling and hybrid machine learning framework...</td><td>Proposed a physics-informed + ML framework (hybrid model) to predict HTC on microchannel structures; used SHAP for interpretability.</td></tr>
+        </table>
+        <p><strong>Key Insights:</strong></p>
+        <ul>
+            <li>The integration of machine learning/data-driven models with classical boiling physics is an emerging trend.</li>
+            <li>Thin surface geometries, wettability, roughness, and microstructure all interplay to influence bubble dynamics and heat transfer.</li>
+            <li>Existing correlations often lack generality; there is a need for models that link geometry parameters directly to bubble behavior.</li>
+        </ul>
+    </section>
+    
+    <section id="gaps">
+        <h2>Research Gaps & Problem Statement</h2>
+        <ul>
+            <li><strong>Gap 1:</strong> No systematic link between Bio-inspired pattern geometry and boiling parameters such as bubble frequency, HTC, CHF, bubble dynamics, Surface temperature (thermocouples), Visualization of nucleation site density.</li>
+            <li><strong>Gap 2:</strong> Lack of research on nucleate boiling behavior over bio-inspired microstructured surfaces, leaving their potential heat transfer enhancement mechanisms unexplored.</li>
+            <li><strong>Gap 3:</strong> Benchmark the performance of the bio-inspired surface against existing coated surfaces to evaluate the enhancement in nucleate boiling characteristics.</li>
+            <li><strong>Gap 4:</strong> Limited understanding of how bio-inspired microstructured surfaces perform in real-life applications.</li>
+            <li><strong>Problem Statement:</strong> Conventional surfaces limit bubble departure and rewetting, causing premature transition to film boiling.</li>
+        </ul>
+    </section>
+    
+    <section id="obj">
+        <h2>Research Objectives</h2>
+        <ol>
+            <li>Design and fabricate bio-inspired micro-patterns (lotus, shark, leaf geometries).</li>
+            <li>Study boiling heat transfer characteristics on each surface.</li>
+            <li>Measure bubble site density, departure diameter, HTC, Bubble dynamics (high-speed camera), Surface temperature (thermocouples).</li>
+            <li>Develop correlations linking pattern geometry to performance.</li>
+            <li>Benchmark against smooth and coated surfaces.</li>
+        </ol>
+    </section>
+    
+    <section id="meth">
+        <h2>Methodology</h2>
+        <ul>
+            <li><strong>Fabrication:</strong> Micro-machining of bio-inspired geometries.</li>
+            <li><strong>Characterization:</strong> Contact angle, roughness measurement.</li>
+            <li><strong>Pool Boiling Test:</strong> Controlled heat flux (50–200 kW/m²), distilled water.</li>
+            <li><strong>Data:</strong> Surface temperature, heat flux, bubble dynamics (high-speed camera).</li>
+            <li><strong>Analysis:</strong> Derive HTC, CHF, bubble frequency; compare with other coated models (surfaces).</li>
+        </ul>
+    </section>
+    
+    <section id="plan">
+        <h2>Work Plan + Gantt Chart</h2>
+        <ul>
+            <li><strong>FYP-I:</strong> Literature review, CAD modeling, Fabrication of test surfaces.</li>
+            <li><strong>FYP-II:</strong> Experimental Apparatus Setup, Experimental testing, Data analysis & correlation, Report writing & publication.</li>
+        </ul>
+    </section>
+    
+    <section id="sig">
+        <h2>Significance</h2>
+        <p><strong>Significance:</strong> Bio-inspired surface micro-patterns enhance boiling by increasing nucleation site density, improving liquid rewetting, and reducing surface superheat. This leads to higher Heat Transfer Coefficient (HTC) and Critical Heat Flux (CHF), improving energy efficiency and system safety.</p>
+        <p><strong>Area of Application:</strong></p>
+        <ul>
+            <li>Electronics cooling and data centers for efficient heat removal.</li>
+            <li>Power generation and nuclear reactors for high heat dissipation.</li>
+            <li>Heat exchangers, HVAC, and desalination systems for optimized thermal management.</li>
+            <li>Aerospace and automotive systems requiring compact, high-performance cooling.</li>
+        </ul>
+        <p><strong>Need of Research:</strong> Conventional smooth or coated surfaces have limited nucleation sites and poor rewetting, leading to early vapor film formation. Bio-inspired patterned surfaces mimic natural geometries that enhance capillary action, liquid supply, and vapor removal. There is a strong need to quantify how pattern geometry affects bubble dynamics, HTC, and CHF, to develop predictive models for next-generation high-efficiency boiling surfaces.</p>
+    </section>
+    
+    <section id="sdg">
+        <h2>Sustainable Development Goals (SDGs)</h2>
+        <ul>
+            <li>Enhanced boiling surfaces reduce energy waste in cooling systems.</li>
+            <li>Promote Bio-inspired surfaces and encourage sustainable practices.</li>
+            <li>Support Innovation and Technological Advancements.</li>
+            <li><strong>Relevant SDGs:</strong> SDG 7.3 – Improve energy efficiency; SDG 9.5 – Foster scientific research.</li>
+        </ul>
+    </section>
+    
+    <section id="fund">
+        <h2>Cost / Funding / Collaboration</h2>
+        <ul>
+            <li><strong>Funding:</strong> ASHRAE, NRPU.</li>
+            <li><strong>Collaboration:</strong> With FATE Lab GIKI.</li>
+            <li><strong>Future Scope:</strong> Publication in ASHRAE (STBE), IJR/IJHMT.</li>
+        </ul>
+    </section>
+    
+    <section id="ref">
+        <h2>References</h2>
+        <ol>
+            <li>Empirical modeling and hybrid machine learning framework... DOI: 10.1016/j.ijheatmasstransfer.2025.127163. Authors: Vijay Kuberan and Sateesh Gedupudi.</li>
+            <li>A high-fidelity approach to correlate... DOI: 10.1016/j.ijmultiphaseflow.2021.103719. Authors: Uzair Sajjad, Imtiyaz Hussain, Chi-Chuan Wang.</li>
+            <li>Influence of surface roughness... DOI: https://doi.org/10.2298/TSCI211202062T. Authors: Thangavelu Nithyanandam et al.</li>
+            <li>Study of nucleate boiling growth... DOI: 10.1088/1742-6596/2766/1/012135. Authors: Y Jaunet et al.</li>
+            <li>A review on correlations... DOI: 10.1007/s10973-021-10876-2. Authors: Mahyar Ghazivini et al.</li>
+        </ol>
+    </section>
+    
+    <footer>
+        <p class="neon-text">THANK YOU FOR YOUR ATTENTION</p>
+        <p>Contact: [Your Email/Phone] | Date: 11/8/2025</p>
+    </footer>
+</body>
+</html>
